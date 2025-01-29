@@ -36,7 +36,10 @@ const About = () => {
         <div className="about-section contact">
           <h2>Me contacter</h2>
           <div className="contact-links">
-            <a href="julien.cartron.pro@gmail.com" className="contact-link">
+            <a
+              href="mailto:julien.cartron.pro@gmail.com"
+              className="contact-link"
+            >
               Email
             </a>
             <a
