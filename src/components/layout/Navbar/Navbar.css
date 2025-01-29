@@ -1,0 +1,135 @@
+/* --- Navbar globale --- */
+.navbar {
+  background-color: var(--background-light);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow-sm);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  text-decoration: none;
+}
+
+.logo-text {
+  color: var(--secondary);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* --- Liens de la navbar --- */
+.navbar-links {
+  display: flex; /* Par défaut, affiché en flex */
+  gap: 3rem;
+  list-style: none;
+}
+
+.navbar-links a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: var(--transition-normal);
+}
+
+/* Effet de soulignement au hover */
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secondary);
+  transition: var(--transition-normal);
+}
+
+.navbar-links a:hover::after,
+.navbar-links a.active::after {
+  width: 100%;
+}
+
+.navbar-links a:hover {
+  color: var(--secondary);
+}
+
+.navbar-links a.active {
+  color: var(--secondary);
+}
+
+/* --- Burger menu --- */
+.burger-menu {
+  display: none; /* Masqué par défaut */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.burger-menu span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--text-primary);
+  transition: var(--transition-normal);
+}
+
+/* Animation de l'icône burger */
+.burger-menu.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.burger-menu.open span:nth-child(2) {
+  opacity: 0; /* Cache la barre du milieu */
+}
+
+.burger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* --- Menu mobile --- */
+.navbar-links.show {
+  display: flex;
+  flex-direction: column; /* Liens empilés */
+  gap: 1rem;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background-color: var(--background-light);
+  padding: 1rem 2rem;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  z-index: 1000;
+}
+
+/* --- Responsivité --- */
+@media (max-width: 768px) {
+  .burger-menu {
+    display: flex; /* Affiche le menu burger sur mobile */
+  }
+
+  .navbar-links {
+    display: none; /* Cache les liens sur mobile par défaut */
+  }
+
+  .navbar-links.show {
+    display: flex; /* Affiche les liens quand ouvert */
+  }
+}

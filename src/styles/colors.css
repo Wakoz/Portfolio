@@ -1,0 +1,55 @@
+:root {
+  /* Couleurs principales */
+  --primary: #0a0a0a;
+  --secondary: #f6e300;
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0e0;
+
+  /* États */
+  --hover-primary: #fff047;
+  --active: #d4c300;
+  --error: #ff3b3b;
+  --success: #4caf50;
+
+  /* Fonds et bordures */
+  --background-light: #121212;
+  --background-hover: #1a1a1a;
+  --border: #333333;
+
+  /* Ombres */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.6);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+}
+
+/* Classes utilitaires de base */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+/* Animation de hover générique */
+.hover-effect {
+  transition: all var(--transition-normal);
+}
+
+.hover-effect:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
