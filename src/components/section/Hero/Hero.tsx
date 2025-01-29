@@ -4,7 +4,7 @@ const Hero = () => {
       <div className="hero-content">
         <figure className="hero-image">
           <img
-            src="/src/assets/photo-profil-pro.jpg"
+            src="../../../../public/photo-profil-pro.jpg"
             alt="Portrait de Julien"
           />
         </figure>

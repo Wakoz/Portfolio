@@ -4,7 +4,7 @@ const ProjectsGrid = () => {
       <h2>Projets phares</h2>
       <div className="projects-grid">
         <article className="project-card">
-          <img src="/src/assets/Wildify.png" alt="Project 1" />
+          <img src="../../../../public/Wildify.png" alt="Project 1" />
           <h3>Projet Wildify</h3>
           <p>Projet scolaire sur une reproduction de Spotify</p>
           <a
@@ -18,7 +18,7 @@ const ProjectsGrid = () => {
         </article>
 
         <article className="project-card">
-          <img src="/src/assets/Wild X'mass.png" alt="Project 2" />
+          <img src="../../../../public/Wild X'mass.png" alt="Project 2" />
           <h3>Protojam Wild X'mass</h3>
           <p>Projet scolaire sur le thème de la bienveillance</p>
           <a
