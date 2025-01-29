@@ -16,9 +16,9 @@ const Hero = () => {
           <Link to="/projects" className="cta-button">
             Voir mes projets
           </Link>
-          <a href="about" className="cta-button">
+          <Link to="about" className="cta-button">
             En savoir plus
-          </a>
+          </Link>
         </div>
       </div>
     </section>
