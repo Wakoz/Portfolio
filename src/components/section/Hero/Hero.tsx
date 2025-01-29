@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <section className="hero" role="banner">
@@ -12,9 +13,9 @@ const Hero = () => {
           !!
         </p>
         <div className="profile-cta">
-          <a href="projects" className="cta-button">
+          <Link to="/projects" className="cta-button">
             Voir mes projets
-          </a>
+          </Link>
           <a href="about" className="cta-button">
             En savoir plus
           </a>
