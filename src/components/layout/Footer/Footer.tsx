@@ -1,3 +1,5 @@
+import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
@@ -8,18 +10,18 @@ const Footer = () => {
           <p className="footer-copyright">© 2025 - Portfolio</p>
           <div className="footer-links">
             <a
-              href="hhttps://github.com/Wakoz"
+              href="https://github.com/Wakoz"
               target="_blank"
               rel="noopener noreferrer"
             >
-              GitHub
+              <FaGithub />
             </a>
             <a
               href="https://www.linkedin.com/in/julien-cartron-747559330/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn
+              <FaLinkedin />
             </a>
           </div>
         </div>

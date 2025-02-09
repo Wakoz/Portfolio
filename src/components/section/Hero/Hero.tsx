@@ -8,9 +8,9 @@ const Hero = () => {
         </figure>
         <h1>Bienvenue sur mon Portfolio</h1>
         <p>
-          Julien, développeur web, en recherche d'une alternance je vous propose
-          de parcourir mon Portfolio pour me découvrir et découvrir mes projets
-          !!
+          Vous êtes curieux d'en savoir plus sur un développeur web en quête
+          d'une alternance ? Venez me découvrir au travers de ces quelques pages
+          qui mettent en avant mes projets et mes compétences.
         </p>
         <div className="profile-cta">
           <Link to="/projects" className="cta-button">

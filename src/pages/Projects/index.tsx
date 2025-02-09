@@ -1,35 +1,13 @@
 import "./Projects.css";
+import { PROJECTS } from "../../utils/constants";
 import type { Project } from "../../types/Project";
 
 const Projects = () => {
-  const projects: Project[] = [
-    {
-      id: 1,
-      title: "Wildify",
-      description:
-        "Une application ce basant sur le design de Spotify, faite sur un mois de travail.",
-      technologies: ["React", "CSS", "Javascript", "Node.js", "TypeScript"],
-      image: "/Wildify.png",
-      demoLink: "",
-      codeLink: "https://github.com/WildCodeSchool-2024-09/JS-Bdx-wildify",
-    },
-    {
-      id: 2,
-      title: "Protojam Wild X'mass",
-      description:
-        "Un projet fait en un jour et demis sur le thème de la bienveillance.",
-      technologies: ["React", "CSS", "JavaScript", "TypeScript"],
-      image: "/Wild X'mass.png",
-      demoLink: "",
-      codeLink: "https://github.com/Wakoz/Protojam",
-    },
-  ];
-
   return (
     <section className="projects" aria-labelledby="projects-title">
       <h1 id="projects-title">Mes Projets</h1>
       <div className="projects-grid">
-        {projects.map((project) => (
+        {PROJECTS.map((project: Project) => (
           <article key={project.id} className="project-card">
             <img src={project.image} alt={`Aperçu de ${project.title}`} />
             <div className="project-content">
@@ -66,6 +44,9 @@ const Projects = () => {
           </article>
         ))}
       </div>
+      <p className="text-soon">
+        D'autres projets sont à venir... Restez connectés ! 😉
+      </p>
     </section>
   );
 };

@@ -1,38 +1,34 @@
+import { PROJECTS } from "../../../utils/constants";
+
 const ProjectsGrid = () => {
   return (
     <section className="featured-projects">
       <h2>Projets phares</h2>
       <div className="projects-grid">
-        <article className="project-card">
-          <img src="/Wildify.png" alt="Project 1" />
-          <h3>Projet Wildify</h3>
-          <p>Projet scolaire sur une reproduction de Spotify</p>
-          <a
-            href="https://github.com/WildCodeSchool-2024-09/JS-Bdx-wildify"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-button"
-          >
-            Voir le projet
-          </a>
-        </article>
-
-        <article className="project-card">
-          <img src="/Wild X'mass.png" alt="Project 2" />
-          <h3>Protojam Wild X'mass</h3>
-          <p>Projet scolaire sur le thème de la bienveillance</p>
-          <a
-            href="https://github.com/Wakoz/Protojam"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-button"
-          >
-            Voir le projet
-          </a>
-        </article>
+        {PROJECTS.map((project) => (
+          <article key={project.id} className="project-card">
+            <img src={project.image} alt={project.title} />
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <div className="technologies">
+              {project.technologies.map((tech) => (
+                <span key={tech} className="technology-tag">
+                  {tech}
+                </span>
+              ))}
+            </div>
+            <a
+              href={project.codeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-button"
+            >
+              Voir le projet
+            </a>
+          </article>
+        ))}
       </div>
     </section>
   );
 };
-
 export default ProjectsGrid;

@@ -10,6 +10,16 @@ export const PROJECTS = [
     demoLink: "",
     codeLink: "https://github.com/WildCodeSchool-2024-09/JS-Bdx-wildify",
   },
+  {
+    id: 2,
+    title: "Wild X'mas",
+    description:
+      "Projet de groupe sur une jounrnée et demi sur le théme de la bienveillance.",
+    technologies: ["React", "CSS", "Javascript", "TypeScript", "Node.js"],
+    image: "/WildXmass.png",
+    demoLink: "",
+    codeLink: "https://github.com/Wakoz/Protojam",
+  },
   // ...autres projets
 ] as const;
 

@@ -95,6 +95,10 @@
   background-color: var(--hover-primary);
 }
 
+.text-soon {
+  padding: 1rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .projects {
