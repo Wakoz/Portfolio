@@ -3,6 +3,7 @@ type SkillLevel = 1 | 2 | 3 | 4 | 5;
 interface Skill {
   skill: string;
   level: SkillLevel;
+  className?: string;
 }
 
 const SkillsEvaluation = () => {
@@ -50,8 +51,8 @@ const SkillsEvaluation = () => {
 
   return (
     <div className="skills-evaluation">
-      <h2>Niveau de compétences</h2>
       <div className="skills-container">
+        <h2>Niveau de compétences</h2>
         {skillLevels.map((item) => (
           <div key={item.skill} className="skill-item">
             <span>{item.skill}</span>

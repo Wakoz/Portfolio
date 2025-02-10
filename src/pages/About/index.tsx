@@ -3,6 +3,7 @@ import { SKILLS } from "../../utils/constants";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
 import { SiTypescript, SiMysql } from "react-icons/si";
 import SkillsEvaluation from "../../utils/SkillEvaluation";
+import CVDownloadButton from "../../utils/CvDownload/CvDownload";
 
 const getSkillIcon = (skill: string) => {
   switch (skill.toLowerCase()) {
@@ -84,14 +85,15 @@ const About = () => {
               >
                 LinkedIn
               </a>
+              <CVDownloadButton />
             </div>
           </div>
         </div>
 
         {/* Tableau de droite */}
         <aside className="skills-sidebar">
-          <h2>Languages acquis</h2>
           <div className="skills-container">
+            <h2>Languages acquis</h2>
             {SKILLS.map((skill) => (
               <div key={skill} className="skill-item">
                 {getSkillIcon(skill)}
