@@ -192,6 +192,11 @@
   transform: translateY(-2px);
 }
 
+.contact-link,
+.cv-download-link {
+  display: flex;
+}
+
 /* Responsive */
 @media (min-width: 1201px) {
   .skills-grid {

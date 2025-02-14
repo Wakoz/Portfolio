@@ -4,7 +4,7 @@ const Hero = () => {
     <section className="hero" role="banner">
       <div className="hero-content">
         <figure className="hero-image">
-          <img src="/photo-profil-pro.jpg" alt="Portrait de Julien" />
+          <img src="/photo-profil-pro.webp" alt="Portrait de Julien" />
         </figure>
         <h1>Bienvenue sur mon Portfolio</h1>
         <p>
