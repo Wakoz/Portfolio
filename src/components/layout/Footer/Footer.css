@@ -1,7 +1,7 @@
 .footer {
   background-color: var(--background-light);
   padding: 2rem 0;
-  margin-top: auto; /* Pour coller le footer en bas */
+  margin-top: auto;
 }
 
 .footer-container {
