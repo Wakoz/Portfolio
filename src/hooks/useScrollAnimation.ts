@@ -1,4 +1,3 @@
-// src/hooks/useScrollAnimation.ts
 import { useEffect, useState } from "react";
 
 type ScrollAnimationOptions = {

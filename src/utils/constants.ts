@@ -52,6 +52,24 @@ export const PROJECTS = [
     demoLink: "",
     codeLink: "https://github.com/Wakoz/Wow-characters-traker",
   },
+  {
+    id: 4,
+    title: "Perdu dans Zera",
+    description:
+      "Dernier projet de formation. Basé sur une oeuvre littéraire dans la veine du livre dont vous êtes le héros.",
+    technologies: [
+      "React",
+      "CSS",
+      "Javascript",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MySQL",
+    ],
+    image: "/Perdu-dans-zera.webp",
+    demoLink: "",
+    codeLink: "https://github.com/Wakoz/Perdu-dans-Zera/tree/dev",
+  },
   // ...autres projets
 ] as const;
 

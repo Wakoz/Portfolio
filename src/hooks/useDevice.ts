@@ -1,4 +1,3 @@
-// src/hooks/useDevice.ts
 import { useState, useEffect } from "react";
 
 export const useDevice = () => {

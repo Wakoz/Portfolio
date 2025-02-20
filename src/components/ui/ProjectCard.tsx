@@ -1,4 +1,3 @@
-// src/components/ui/ProjectCard.tsx
 import type { Project } from "../../types/Project";
 import Button from "./Button";
 import OptimizedImage from "./OptimizedImage";

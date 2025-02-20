@@ -1,4 +1,3 @@
-// src/components/ui/OptimizedImage.tsx
 import { useImageLoader } from "../../hooks/useImageLoader";
 
 type OptimizedImageProps = {

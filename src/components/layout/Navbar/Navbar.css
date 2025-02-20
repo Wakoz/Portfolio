@@ -30,7 +30,7 @@
 
 /* --- Liens de la navbar --- */
 .navbar-links {
-  display: flex; /* Par défaut, affiché en flex */
+  display: flex;
   gap: 3rem;
   list-style: none;
 }
@@ -71,7 +71,7 @@
 
 /* --- Burger menu --- */
 .burger-menu {
-  display: none; /* Masqué par défaut */
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
@@ -96,7 +96,7 @@
 }
 
 .burger-menu.open span:nth-child(2) {
-  opacity: 0; /* Cache la barre du milieu */
+  opacity: 0;
 }
 
 .burger-menu.open span:nth-child(3) {
@@ -106,7 +106,7 @@
 /* --- Menu mobile --- */
 .navbar-links.show {
   display: flex;
-  flex-direction: column; /* Liens empilés */
+  flex-direction: column;
   gap: 1rem;
   position: absolute;
   top: 70px;
@@ -122,14 +122,14 @@
 /* --- Responsivité --- */
 @media (max-width: 768px) {
   .burger-menu {
-    display: flex; /* Affiche le menu burger sur mobile */
+    display: flex;
   }
 
   .navbar-links {
-    display: none; /* Cache les liens sur mobile par défaut */
+    display: none;
   }
 
   .navbar-links.show {
-    display: flex; /* Affiche les liens quand ouvert */
+    display: flex;
   }
 }

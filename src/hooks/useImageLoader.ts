@@ -1,4 +1,3 @@
-// src/hooks/useImageLoader.ts
 import { useState, useEffect } from "react";
 
 export const useImageLoader = (src: string) => {
