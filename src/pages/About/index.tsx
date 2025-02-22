@@ -38,12 +38,29 @@ const About = () => {
         {/* Contenu central */}
         <div className="content-center">
           <div className="about-section">
-            <h2>Qui suis-je ?</h2>
             <p>
-              Développeur web passionné, actuellement en reconversion
-              professionnelle. Je suis à la recherche d'une alternance pour
-              continuer à développer mes compétences et contribuer à des projets
-              innovants.
+              Aujourd'hui, mon expérience et ma formation mon permis de
+              constuire ma vision : "Donner vie aux rêves".
+            </p>
+
+            <p>
+              En suivant une démarche régoureuse, je crois pouvoir rendre
+              réelles les idées des clients.
+            </p>
+
+            <p>
+              Mais je peux m'améliorer encore et approfondir mes compétences
+              pour répondre, toujours au plus juste, aux besoins et projets de
+              ces professionels.
+            </p>
+            <p>
+              Et pour ce faire, j'ai besoin d'une entreprise qui sera en mesure
+              de m'accompagner et de me fournir les outils pour perfectionner ma
+              pratique au travers d'une alternance.
+            </p>
+            <p>
+              C'est aussi gâce à mon professionnalisme et ma soif d'apprendre
+              que je sais pouvoir rendre profitable, à tous, ce partenariat.
             </p>
           </div>
 
