@@ -39,19 +39,19 @@ const About = () => {
         <div className="content-center">
           <div className="about-section">
             <p>
-              Aujourd'hui, mon expérience et ma formation mon permis de
-              constuire ma vision : "Donner vie aux rêves".
+              Aujourd'hui, mon expérience et ma formation m'ont permis de
+              construire ma vision : "Donner vie aux rêves".
             </p>
 
             <p>
-              En suivant une démarche régoureuse, je crois pouvoir rendre
+              En suivant une démarche rigoureuse, je crois pouvoir rendre
               réelles les idées des clients.
             </p>
 
             <p>
               Mais je peux m'améliorer encore et approfondir mes compétences
               pour répondre, toujours au plus juste, aux besoins et projets de
-              ces professionels.
+              ces professionnels.
             </p>
             <p>
               Et pour ce faire, j'ai besoin d'une entreprise qui sera en mesure
@@ -59,7 +59,7 @@ const About = () => {
               pratique au travers d'une alternance.
             </p>
             <p>
-              C'est aussi gâce à mon professionnalisme et ma soif d'apprendre
+              C'est aussi grâce à mon professionnalisme et ma soif d'apprendre
               que je sais pouvoir rendre profitable, à tous, ce partenariat.
             </p>
           </div>

@@ -9,7 +9,7 @@ const Hero = () => {
         <h1>Bienvenue sur mon Portfolio</h1>
         <p>
           Vous êtes curieux d'en savoir plus sur un développeur web en quête
-          d'une alternance ? Venez me découvrir au travers de ces quelques pages
+          d'une alternance ? Venez me découvrir à travers de ces quelques pages
           qui mettent en avant mes projets et mes compétences.
         </p>
         <div className="profile-cta">
